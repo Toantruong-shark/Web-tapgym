@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MUA DỤNG CỤ</title>
+    <link rel="stylesheet" href="css/DungCu.css"/>
+    <script src="js/Dungcu.js"></script>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <caption>CÁC DỤNG CỤ TẬP LUYỆN </caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Tên dụng cụ</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                    <th>Mua</th>
+                </tr>  
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" class="chon" checked onchange="daott(this)"></td>
+                    <td>Đai lưng</td>
+                    <td><input type="number" class="soluong" min="0" value="1" onchange="tinhTong()"></td>
+                    <td>900000</td>
+                    <td><button onclick="them(this)">Chọn</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chon" checked onchange="daott(this)"></td>
+                    <td>Bao tay</td>
+                    <td><input type="number" class="soluong" min="0" value="1" onchange="tinhTong()"></td>
+                    <td>1750000</td>
+                    <td><button onclick="them(this)">Chọn</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chon" checked onchange="daott(this)"></td>
+                    <td>Băng gối,cổ tay,khuỷu tay</td>
+                    <td><input type="number" class="soluong" min="0" value="1" onchange="tinhTong()"></td>
+                    <td>1300000</td>
+                    <td><button onclick="them(this)">Chọn</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chon" checked onchange="daott(this)"></td> 
+                    <td>Whey Protein</td>
+                    <td><input type="number" class="soluong" min="0" value="1" onchange="tinhTong()"></td>
+                    <td>1150000</td>
+                    <td><button onclick="them(this)">Chọn</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chon" checked onchange="daott(this)"></td> 
+                    <td>Balo thể thao</td>
+                    <td><input type="number" class="soluong" min="0" value="1" onchange="tinhTong()"></td>
+                    <td>950000</td>
+                    <td><button onclick="them(this)">Chọn</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr style="margin:20px 0"/>    
+        <table id="cart">
+            <caption>GIỎ HÀNG CỦA BẠN</caption>
+        </table>
+        <h3 id="tong" style="display: none;">TÍNH TỔNG TIỀN: <span id="tongValue">0</span></h3>
+        <a href="TrangChu.html">Quay lại trang chủ</a>
+        <div id="checkoutContainer">
+            <button id="checkoutBtn" onclick="thanhToan()">Thanh toán</button>
+        </div>
+    </div>
+</body>
+</html>

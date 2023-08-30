@@ -1,0 +1,46 @@
+.container{
+    width:600px;  
+    margin: auto; 
+    background:rgb(166, 223, 223); 
+    padding:20px; 
+    font-size: 1.2em;
+}
+
+/*Tạo nút thanh toán*/
+#checkoutContainer {
+    margin-top: 40px;
+    text-align: right;
+    display: inline-block;
+    white-space: nowrap;
+
+}
+#checkoutBtn {
+    width: 150px; 
+    height: 40px;
+}
+
+
+table{  
+    width: 100%;  
+    border-collapse:collapse; 
+}
+th, td{ 
+    border: 2px solid rgb(0, 0, 0);  
+    padding: 6px;  
+    text-align: center; 
+}
+
+caption{  
+    font-weight: 600;  
+    font-size: 1.2em;
+    background: wheat;
+    text-align: top;
+}
+button{  
+    width: 60px; 
+    height: 25px; 
+}
+#cart {
+    margin-top: 50px; /* Khoảng cách với bảng trên */
+    margin-bottom: 50px; /* Khoảng cách với bảng dưới */
+}
